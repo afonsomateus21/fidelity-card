@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ZeluxImage from "../assets/images/zelux-removebg-preview.png"
 import { UserInput } from "../components/Input";
 
@@ -15,11 +16,13 @@ export function Login() {
         type="password"
       />
 
-      <button className="bg-lime-600 w-[200px] h-[50px] rounded-3xl items-center">
+      <Link 
+        to="/home"
+        className="bg-lime-600 w-[200px] h-[50px] rounded-3xl flex justify-center items-center">
         <strong className="text-white">
           Entrar
         </strong>
-      </button>
+      </Link>
     </div>
   );
 }
